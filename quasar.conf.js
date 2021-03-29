@@ -165,7 +165,7 @@ module.exports = function (/* ctx */) {
 
     // Full list of options: https://v1.quasar.dev/quasar-cli/developing-electron-apps/configuring-electron
     electron: {
-      bundler: 'packager', // 'packager' or 'builder'
+      bundler: 'builder', // 'packager' or 'builder'
 
       packager: {
         // https://github.com/electron-userland/electron-packager/blob/master/docs/api.md#options
@@ -183,7 +183,18 @@ module.exports = function (/* ctx */) {
       builder: {
         // https://www.electron.build/configuration/configuration
 
-        appId: 'agropark_erp'
+        appId: 'ng.agropark.erp',
+        win: {
+          target: 'nsis',
+          certificateFile: 'private/agropark.pfx',
+          certificatePassword: '',
+          verifyUpdateCodeSignature: false,
+          publisherName: 'agropark'
+        },
+        publish: {
+          provider: 'github',
+          releaseType: 'draft'
+        }
       },
 
       // More info: https://v1.quasar.dev/quasar-cli/developing-electron-apps/node-integration
