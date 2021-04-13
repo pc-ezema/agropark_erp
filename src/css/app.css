@@ -1,0 +1,333 @@
+/**
+ * Set default font family to Roboto.
+ */
+ .q-page {
+     font-family: Roboto;
+ }
+ .landing_bg {
+    background-image: url("../assets/images/landing_bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100%;
+ }
+ .logo {
+    position: absolute;
+    top: 2rem;
+    left: 4rem;
+    background-image: url("../assets/images/logo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 14rem;
+    height: 3.2rem; 
+ }
+ .welcome_h3 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 4rem;
+    letter-spacing: 0.22em;
+    color: #FFFFFF;
+ }
+ .welcome_p {
+    font-family: Roboto;
+    font-size: 1.2rem;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+ }
+ .welcome_btn {
+    font-family: Roboto;
+    font-size: 1rem;
+    width: 200px;
+    background: transparent;
+    border: 3px solid #F8D315;
+    box-sizing: border-box;
+    border-radius: 10px;
+    color: #FFFFFF;
+ }
+ @media (max-width: 575px) {
+     .logo {
+        position: fixed;
+        left: 48%;
+        transform: translate(-50%, 0);
+        animation-duration: 3s;
+        animation-name: slidein;
+     }
+    .welcome_h3 {
+        font-size: 2rem;
+    }
+    .welcome_p {
+        font-size: .8rem;
+    }
+    .welcome_btn {
+        margin-top: 1rem;
+        width: 120px;
+        font-size: .8rem
+    }
+    @keyframes slidein {
+    from {
+        margin-top: 20%;
+    }
+
+    to {
+        margin-left: 0%;
+    }
+    }
+}
+
+ /* login page */
+ .logo_login {
+    background-image: url("../assets/images/logo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 14rem;
+    height: 3.2rem; 
+ }
+.login_h4 {
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: bold;
+    text-align: center;
+    color: #6AB406;
+    margin-top: 2.7rem;
+    margin-bottom: -1rem;
+}
+.login-mobile_h4 {
+    display: none;
+}
+.login_email p {
+    font-family: Roboto;
+    font-size: 1.1rem;
+    letter-spacing: 0.02em;
+    color: #353434;
+}
+.login_password {
+    margin-top: 2rem;
+}
+.login_password p {
+    font-family: Roboto;
+    font-size: 1.1rem;
+    letter-spacing: 0.02em;
+    color: #353434;
+    margin-top: 1rem;
+}
+.forgetbtn {
+    text-transform: capitalize;
+}
+.q-icon {
+    margin-top: -0.5rem;
+}
+.q-input {
+    background: #E6F2E1;
+    box-shadow: 0px 4px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+    height: 3rem;
+    width: 22rem;
+    font-size: 1.1rem;
+    margin-top: -0.7rem;
+    padding: 0 1rem;
+}
+.login_h3 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 4rem;
+    letter-spacing: 0.22em;
+    color: #FFFFFF;
+ }
+ .login_p {
+    font-family: Roboto;
+    font-size: 1.2rem;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+ }
+.login_btn { 
+    width: 22rem;
+    color: white;
+    background: #6AB406;
+    box-shadow: 0px 4px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+    font-size: 1.2rem;
+    height: 2.7rem;
+    margin-top: 2rem;
+    text-transform: capitalize;
+}
+@media (max-width: 575px) {
+    .logo_login {
+        width: 10rem;
+        height: 3rem;
+        animation-duration: 3s;
+        animation-name: slidein; 
+     }
+    .right-side_bg {
+        display: none;
+    }
+    .login_h4 {
+        display: none;
+    }
+    .login-mobile_h4 {
+        display: inline-block;
+        font-size: 2rem;
+        font-style: normal;
+        font-weight: bold;
+        text-align: center;
+        color: #6AB406;
+        margin-bottom: -2rem;
+    }
+    .login_email {
+        margin-bottom: -1rem;
+    }
+    .login_email p {
+        font-family: Roboto;
+        font-size: .9rem;
+        color: #353434;
+    }
+    .login_password p {
+        font-family: Roboto;
+        font-size: .9rem;
+        color: #353434;
+    }
+    .q-input {
+        height: 2rem;
+        width: 17rem;
+        font-size: .9rem;
+        margin-top: -0.7rem;
+        padding-top: -7rem;
+    }
+    .q-icon {
+        margin-top: -1.4rem;
+        font-size: 1.1rem;
+    }
+    .forgetbtn {
+        text-transform: capitalize;
+    }
+    .login_btn { 
+        width: 17rem;
+        font-size: 1rem;
+    }
+    @keyframes slidein {
+        from {
+            margin-top: 20%;
+        }
+    
+        to {
+            margin-left: 0%;
+        }
+    }
+}
+
+/* forget password page */
+.fp_page_adjust {
+    margin-top: 20%;
+}
+.back_arrow {
+    display: none;
+}
+.fpass_h4 {
+    font-size: 2rem;
+    text-align: center;
+    color: #6AB406;
+}
+.fpass_h4 p{
+    font-family: Roboto;
+    font-size: 1.1rem;
+    text-align: center;
+    color: #5C5B5B;
+}
+.fp_email p {
+    font-family: Roboto;
+    font-size: 1.1rem;
+    letter-spacing: 0.02em;
+    color: #353434;
+}
+
+@media (max-width: 575px) {
+    .fp_page_adjust {
+        margin-top: 15%;
+    }
+    .back_arrow {
+        display: inline-block;
+        position: fixed;
+        left: 12%;
+        font-size: 2rem;
+    }
+    .fpass_h4 {
+        text-align: left;
+        margin-top: 4rem;
+        margin-left: -1rem;
+        font-size: 1.8rem;
+    }
+    .fpass_h4 p {
+        text-align: left;
+        font-size: 0.9rem;
+    }
+    .fp_email p {
+        font-size: .9rem;
+    }
+    @keyframes slidein {
+        from {
+            margin-top: 20%;
+        }
+    
+        to {
+            margin-left: 0%;
+        }
+    }
+}
+/* recovery password page */
+.rp_page_adjust {
+    margin-top: 35%;
+}
+.rpass_h4 {
+    font-size: 2rem;
+    text-align: center;
+    color: #6AB406;
+}
+.rpass_h4 p{
+    font-size: 1.1rem;
+    color: #5C5B5B;
+}
+
+.left-side_bg {
+    background-image: url("../assets/images/left-side_bg.jpg");
+    background-size: 100%;
+    background-repeat: repeat;
+}
+.right-side_bg {
+
+    background-image: url("../assets/images/right-side_bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.rpass_input p {
+    font-family: Roboto;
+    font-size: 1.1rem;
+    letter-spacing: 0.02em;
+    color: #353434;
+    margin-top: 1rem;
+}
+
+@media (max-width: 575px) {
+    .rp_page_adjust {
+        margin-top: 100%;
+    }
+    .rpass_h4 {
+        text-align: left;
+        font-size: 1.8rem;
+        margin-left: 2rem;
+        margin-top: 4rem;
+    }
+    .rpass_h4 p {
+        font-size: 0.9rem;
+        margin-bottom: -1rem;
+    }
+    .back_arrow {
+        display: inline-block;
+        position: fixed;
+        left: 12%;
+        font-size: 1rem;
+    }
+    .rpass_input p {
+        font-size: .9rem;
+        margin-top: 1rem;
+    }
+}
