@@ -9,9 +9,9 @@ export default {
 }
 
 
-//TODO: password reset mail
-//TODO: Authentication trigger
-//TODO: Landing Page Design
+//TODO: 404 page, password reset, password confirmation, login, welcome page
+//TODO: Working on Auth Vuex
+
 </script>
 
 

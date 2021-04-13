@@ -13,7 +13,8 @@ const routes = [
     redirect: "/auth/login",
     children: [
       { path: '/auth/login', component: () => import('pages/auth/login.vue') },
-      { path: '/auth/password_reset', component: () => import('pages/auth/password_reset.vue') }
+      { path: '/auth/password_reset', component: () => import('pages/auth/password_reset.vue') },
+      { path: '/auth/password_confirmation', component: () => import('pages/auth/password_confirmation.vue') }
     ]
   },
 
