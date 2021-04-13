@@ -2,13 +2,18 @@
   <q-page class="">
     <div class="row">
       <div class="col left-side_bg" style="height: 100vh">
-        <div style="margin-top: 3.5rem">
-        <app-login-form></app-login-form>
+        <div style="margin-top: 10%">
+        <!-- <q-img
+            src="../../assets/images/logo.png"
+            class="login_logo"
+          >
+          </q-img> -->
+        <app-recovery-form></app-recovery-form>
         </div>
       </div>
 
       <div class="col right-side_bg" style="height: 100vh">
-        <div style="margin-top: 35%"> 
+        <div class="rp_page_adjust"> 
           <div class="column self-center text-center login_h3">
             AGRO-PARK
           </div>
@@ -25,10 +30,10 @@
 </template>
 
 <script>
-import LoginForm from "../../components/LoginForm";
+import RecoveryPasswordForm from "../../components/RecoveryPasswordForm";
 export default {
   components: {
-    "app-login-form": LoginForm
+    "app-recovery-form": RecoveryPasswordForm
   }
 };
 </script>

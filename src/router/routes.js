@@ -3,18 +3,18 @@ const routes = [
     path: '/',
     component: () => import('layouts/MainLayout.vue'),
     children: [
-      { path: '', component: () => import('pages/welcome.vue') }
+      { path: '', component: () => import('pages/welcome.vue') },
+      
     ]
   },
 
   {
     path: '/auth',
-    component: () => import('src/layouts/AuthLayout.vue'),
-    redirect: "/auth/login",
+    component: () => import('layouts/AuthLayout.vue'),
     children: [
-      { path: '/auth/login', component: () => import('pages/auth/login.vue') },
-      { path: '/auth/password_reset', component: () => import('pages/auth/password_reset.vue') },
-      { path: '/auth/password_confirmation', component: () => import('pages/auth/password_confirmation.vue') }
+      { path: '/login', component: () => import('pages/auth/login.vue') },
+      { path: '/forget_password', component: () => import('pages/auth/forget_password.vue') },
+      { path: '/recovery_password', component: () => import('pages/auth/recovery_password.vue') }
     ]
   },
 
