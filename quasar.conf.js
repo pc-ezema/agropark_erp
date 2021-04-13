@@ -24,6 +24,8 @@ module.exports = function (/* ctx */) {
       'i18n',
       'axios',
       'firebase',
+      'is-auth-start',
+      'is-auth',
     ],
 
     // https://v1.quasar.dev/quasar-cli/quasar-conf-js#Property%3A-css

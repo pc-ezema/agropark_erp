@@ -10,17 +10,22 @@ const routes = [
   {
     path: '/auth',
     component: () => import('src/layouts/AuthLayout.vue'),
+    redirect: "/auth/login",
     children: [
-      { path: '/login', component: () => import('pages/auth/login.vue') },
-      { path: '/password_reset', component: () => import('pages/auth/password_reset.vue') }
+      { path: '/auth/login', component: () => import('pages/auth/login.vue') },
+      { path: '/auth/password_reset', component: () => import('pages/auth/password_reset.vue') }
     ]
   },
 
   {
     path: '/admin',
     component: () => import('src/layouts/AdminLayout.vue'),
+    redirect: "/admin/dashboard",
+    meta: {
+      requiresAuth: true
+    },
     children: [
-      { path: '/dashboard', component: () => import('pages/admin/dashboard.vue') },
+      { path: '/admin/dashboard', component: () => import('pages/admin/dashboard.vue') },
     ]
   },
 
