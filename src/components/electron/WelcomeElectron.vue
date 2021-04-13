@@ -15,7 +15,7 @@
                 </p>
               </div>
               <div class="col">
-                <q-btn class="welcome_btn rounded" flat to="/login" label="Get Started" />
+                <q-btn class="welcome_btn rounded" flat to="/auth/login" label="Get Started" />
               </div>
             </div>
           </div>

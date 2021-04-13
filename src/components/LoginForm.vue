@@ -31,7 +31,7 @@
 
             <q-btn
               class="float-right q-mt-sm forgetbtn"
-              to="/forget_password"
+              to="/auth/forget_password"
               label="Forget Password?"
               stretch
               flat
