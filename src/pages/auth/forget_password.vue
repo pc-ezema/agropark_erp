@@ -12,7 +12,7 @@
                 icon="keyboard_backspace"
                 class="back_arrow"
                 color="#424242"
-                to="/login"
+                to="/auth/login"
               />
 
               <div class="col fpass_h4 ">
@@ -27,7 +27,7 @@
                 <q-form class="q-gutter-md login_form q-mt-xl">
                   <div class="fp_email">
                     <p>Email</p>
-                    <q-input color="grey-3 q-px-lg" borderless v-model="email">
+                    <q-input color="grey-3" borderless v-model="email">
                       <template v-slot:append>
                         <q-icon name="email" color="#424242" />
                       </template>

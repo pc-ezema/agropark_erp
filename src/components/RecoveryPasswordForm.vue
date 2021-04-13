@@ -7,7 +7,7 @@
       icon="keyboard_backspace"
       class="back_arrow"
       color="#424242"
-      to="/forget_password"
+      to="/auth/forget_password"
     />
     <div class="column items-center">
       <div class="col rpass_h4">
@@ -21,7 +21,7 @@
         <q-form class=" login_form q-mt-xl">
           <div class="rpass_input">
             <p>Reset Code</p>
-            <q-input color="grey-3 q-px-lg" borderless v-model="resetCode">
+            <q-input color="grey-3" borderless v-model="resetCode">
               <template v-slot:append>
                 <q-icon name="code" color="#424242" />
               </template>
@@ -30,7 +30,7 @@
 
           <div class="rpass_input">
             <p>New Password</p>
-            <q-input color="grey-3 q-px-lg" borderless v-model="newPassword">
+            <q-input color="grey-3" borderless v-model="newPassword">
               <template v-slot:append>
                 <q-icon name="password" color="#424242" />
               </template>
@@ -40,7 +40,7 @@
           <div class="rpass_input">
             <p>Confirm New Password</p>
             <q-input
-              color="grey-3 q-px-lg"
+              color="grey-3"
               borderless
               v-model="confirmNewPassword"
             >
