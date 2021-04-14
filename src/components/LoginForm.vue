@@ -14,7 +14,7 @@
         <q-form class="q-gutter-md q-mt-xl">
           <div class="login_email">
             <p>Email</p>
-            <q-input color="grey-3" borderless v-model="email">
+            <q-input color="grey-3" borderless flat v-model="email">
               <template v-slot:append>
                 <q-icon name="email" color="#424242" />
               </template>
